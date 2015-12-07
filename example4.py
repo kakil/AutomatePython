@@ -1,7 +1,9 @@
 print('How many cats do you have?')
 numCats = input()
 try:
-    if int(numCats) >= 4:
+    if int(numCats) < 0:
+        print('No negative numbers please.')
+    elif int(numCats) >= 4:
         print('That is a lot of cats.')
 
     else:
